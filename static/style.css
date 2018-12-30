@@ -1,0 +1,157 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img/bg_site.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section-title {
+    font-family: "Neou";
+    font-weight: bold;
+    color: #a5c2c4;
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    font-size: 3em;
+}
+
+.scoreboard-item-container {
+    width: 40vw;
+    position: absolute;
+}
+
+.scoreboard-item-container > img {
+    width:100%;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.4s ease;
+    transform: scale(1);
+}
+
+.hex-spawn {
+    transform: scale(0)!important;
+}
+.line-container {
+    overflow: hidden;
+    clip-path: polygon(100% 7%, 100% 50%, 100% 93%, 10% 93%, 19.60% 67.45%, 19.71% 31.71%, 10% 7%);
+    z-index: 1;
+}
+
+.line-container > img {
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    transform: translateX(0%);
+}
+
+.line-spawn {
+    transform: translateX(-100%)!important;
+}
+
+#score-1 {
+    top: 18%;
+    left: 30%;
+}
+
+#score-2 {
+    left: 5vw;
+    top: 35vh;
+}
+
+#score-3 {
+    right: -2vw;
+    top: 35vh;
+}
+
+#score-4 {
+    top: 60vh;
+    left: 3vw;
+}
+
+#score-5 {
+    top: 60vh;
+    left: 33vw;
+}
+
+#score-6 {
+    top: 60vh;
+    left: 63vw;
+}
+
+#score-7 {
+    top: 75vh;
+    left: 8vw;
+}
+
+#score-8 {
+    top: 75vh;
+    left: 38vw;
+}
+
+#score-9 {
+    top: 75vh;
+    left: 68vw;
+}
+
+.place-number-small {
+    left: 9.5%!important;
+}
+
+.place-line-container-small {
+    top: 37%!important;
+    left: 22%!important;
+}
+
+.place-line-name-small {
+    font-size: 2.5em!important;
+}
+
+.place-line-container-medium {
+    top: 35%!important;
+    left: 23%!important;
+}
+
+.place-line-name-medium {
+    font-size: 2.8em!important;
+}
+
+
+.place-number {
+    position: absolute;
+color: white;
+font-family: "Neou";
+font-weight: bold;
+font-size: 4em;
+top: 48px;
+left: 10.5%;
+transition: all 0.4s ease;
+opacity: 1;
+}
+
+.place-number-spawn {
+    opacity: 0!important;
+}
+
+.name-container {
+    position: absolute;
+left: 25%;
+top: 33%;
+height: 72px;
+width: 700px;
+overflow: hidden;
+}
+
+.name-container > span {
+    position: absolute;
+left: 0;
+color: white;
+width: 700px;
+font-family: "Neou";
+font-size: 3em;
+transition: all 0.4s ease;
+transform: translateY(0%);
+}
+
+.name-spawn {
+    transform: translateY(100%)!important;
+}

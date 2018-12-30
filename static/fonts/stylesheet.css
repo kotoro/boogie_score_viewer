@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Neou';
+    src: url('Neou-Bold.woff2') format('woff2'),
+        url('Neou-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neou';
+    src: url('Neou-Thin.woff2') format('woff2'),
+        url('Neou-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SPACEODYSSEE';
+    src: url('SPACEODYSSEE.woff2') format('woff2'),
+        url('SPACEODYSSEE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
