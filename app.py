@@ -50,6 +50,14 @@ def launchAnim():
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route('/mission', methods=['GET'])
+def selectMission():
+    return render_template("mission.html")
+
+@app.route('/mission/<int:userid>/<type>', methods=['POST'])
+def launchMission():
+    return "A définir"
 	
 @app.route('/test-codebarre')
 def testcode():
