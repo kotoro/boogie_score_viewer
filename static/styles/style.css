@@ -160,3 +160,83 @@ body {
 .encrypted {
     font-family: "SPACEODYSSEE";
 }
+
+.user-title-container {
+    color: white;
+    width: 100%;
+    margin: 0 auto; 
+    display: grid;
+    font-family: Neou;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 
+}
+
+.user-score-container {
+    color: white;
+    display: grid;
+    font-family: Neou;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-between;
+    margin: 23vh auto; 
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.user-title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.user-title-desc {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+#user-scoreboard {
+    padding: 2vw 4vw;
+}
+
+#user-firstname-container {
+    font-weight: bold;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.score-total {
+    font-size: 6.5vw
+}
+
+.score-total-desc {
+    font-size: 2vw
+}
+
+.score-stat-container {
+    padding-top: 4.5vh;
+}
+
+.score-stat {
+    font-family: Neou;
+    color: #a5c2c4;
+    font-size: 1.5vw
+}
+
+.score-stat-title {
+    font-weight: bold
+}
+
+.score-stat-desc {
+    font-size: 2vw
+}

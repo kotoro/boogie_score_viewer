@@ -52,4 +52,31 @@ $(function(){
             }, 1600);
         }, 1600);
     });
+
+    socket.on('mission-initialized', function(data){
+        $('#global-scoreboard').hide()
+        $('#user-scoreboard').show()
+
+
+        // Set firstname
+        $('#user-firstname').text(data.prenom)
+        $('#user-firstname-enc').text(data.prenom)
+
+        // Set lastname
+        $('#user-lastname').text(data.nom)
+        $('#user-lastname-enc').text(data.nom)
+
+        $('#user-drinks').text(data.nb_drinks)
+        $('#user-cup').text(data.cup_used)
+        $('#user-score').text(data.score)
+        $('#user-alcool').text(data.nb_alc)
+        $('#user-soft').text(data.nb_soft)
+    });
+
+    socket.on('mission-completed', function(){
+        $('#global-scoreboard').show()
+        $('#user-scoreboard').hide()
+    });
+
+    $('#user-scoreboard').hide()
 });

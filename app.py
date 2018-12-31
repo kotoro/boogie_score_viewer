@@ -41,8 +41,7 @@ class Drinks(Base):
 	newCup = db.Column(db.Boolean, nullable=False)
 	time = db.Column(db.DateTime, nullable=False)
 
-
-@app.route('/launch_anim_scoreboard')
+@app.route('/anim/scoreboard')
 def launchAnim():
     socketio.emit('launch_anim_scoreboard')
     return "ok"
@@ -51,12 +50,18 @@ def launchAnim():
 def index():
     return render_template("index.html")
 
+@app.route('/scan/<int:userId>')
+def scan(userId):
+    socketio.emit('mission-initialized', {'nom': 'Jaurey','prenom': 'Dorian','score': 504, 'nb_soft': -4,'nb_alc': 13,'nb_drinks': 9,'cup_used': 6})
+    return "ok"
+
 @app.route('/mission', methods=['GET'])
 def selectMission():
     return render_template("mission.html")
 
-@app.route('/mission/<int:userid>/<type>', methods=['POST'])
-def launchMission():
+@app.route('/mission/<int:userId>/<string:type>')
+def launchMission(userId, type):
+    socketio.emit('mission-completed')
     return "A définir"
 	
 @app.route('/test-codebarre')
