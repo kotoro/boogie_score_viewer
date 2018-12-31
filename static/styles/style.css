@@ -180,7 +180,7 @@ body {
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     justify-content: space-between;
-    margin: 23vh auto; 
+    margin: 10vh auto; 
     text-transform: uppercase;
     width: 100%;
 }
@@ -215,8 +215,20 @@ body {
     text-align: right;
 }
 
+#score-total-container {
+    background-image: url("../img/anim_score.gif");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    text-align: center;
+}
+
 .score-total {
     font-size: 6.5vw
+    top: 18vh;
+    position: relative;
 }
 
 .score-total-desc {
@@ -224,7 +236,7 @@ body {
 }
 
 .score-stat-container {
-    padding-top: 4.5vh;
+    padding-top: 10vh;
 }
 
 .score-stat {
